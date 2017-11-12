@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html >
+<head>
+{% load static %}
+  <meta charset="UTF-8">
+  <title>New Leaf</title>
+  <link rel="stylesheet" href="{% static './style.css' %}"/>
+</head>
+
+<body>
+  <div class="h">
+     <h1> New Leaf </h1> 
+  <figcaption>
+    <h2>New Leaf</h2>
+  </figcaption>
+  </div>
+
+
+<input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+<div id='dialog'>
+  <label id="dlg-back" for="dialog_state"></label>
+    <div id='dlg-wrap'>
+      <h3 id='dlg-header'>Sign In </h3>
+        <div class='login_fields'>
+          <div class='login_fields__user'>
+           <div class='icon'>
+            <img src='http://d2nysvt2e2u12u.cloudfront.net/img/NPLwebsite17_header_mobile_accountBtn.png?v=34534534'> <input placeholder='Username' type='text'></div>
+            <div class='validation'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+            </div>
+          </input>
+        </div>
+          <div class='login_fields__password'>
+            <div class='icon'>
+              <img src='http://upload.wikimedia.org/wikipedia/commons/9/9e/Lock_icon.png'> <input placeholder='Password' type='password'> </div>
+              <div class='validation'> </div>
+            </div>
+          <div class='login_fields__submit'>
+           <input type='submit' value='Log In'>
+            <div class='forgot'>
+              <div class='sign'>
+                <a href='signup'>Sign Up</a>
+              </div>
+              <a href='#'>Forgot password?</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<main id='main' class='main_area'>
+  <div class='center'>
+    <label class="button" for="dialog_state"><i class="icon ion-ios-upload-outline"></i> Sign In </label>
+  </div>
+<div id='console'></div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

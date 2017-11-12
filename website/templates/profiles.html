@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" href="profiles.css">
+<title>Profile</title>
+<meta charset=utf-8>
+</head>
+<body>
+	<h1> First Last </h1>
+  <div class="tabbed">
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1">About</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">Uploads</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">Starred Jobs </label>
+    <input type="radio" name="tabs" id="tab-nav-4">
+    <label for="tab-nav-4">Applied Jobs</label>
+    <div class="tabs">
+       <div>
+       	<h2>Name: <input placeholder='First Name     Last Name' type='text'> </h2>
+       	<h2>DOB: <input placeholder='mm/dd/yyyy' type='text'> </h2>
+       	<h2>School: <input placeholder='School Name' type='text'> </h2>
+       	<h2>Graduation Date: <input placeholder='mm/yyyy' type='text'> </h2>
+       	<h2> Career Intersts: <input placeholder='list' type='text'> </h2>
+       </div>
+
+      <div>
+      	<h2>Resume <input type="file" id="myFile"> </h2>
+      	<h2>Transcript <input type="file" id="myFile"> </h2>
+      </div>
+
+      <div>
+      	<h2></h2>
+      	<p></p>
+      </div>
+
+      <div>
+      	<h2></h2>
+      	<p></p>
+      </div>
+
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+</body>
+</html>
+

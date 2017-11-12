@@ -1,7 +1,6 @@
 {% extends 'signup.html' %}
 
 {% block body %}
-	
 	<form method = "post" action = ".">
 		{% csrf_token %}
 		{{ form.as_p}}
