@@ -29,7 +29,7 @@ def signup(request):
             username = userObj['username']
             password =  userObj['password']
             if not (User.objects.filter(username=username).exists()):
-                User.objects.create_user(username,password)
+                User.objects.create_user(username,email = None, password=password)
                 user = authenticate(username = username, password = password)
                 login(request)
                 return HttpResponseRedirect('/')
