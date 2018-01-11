@@ -4,9 +4,9 @@ from . import views
 #
 urlpatterns = [
 	url(r'^$', views.home, name='home'),
-	url(r'^login/', login, {'template_name': 'templates/login.html'}),
+	url(r'^login/', views.loginReq, name = 'login'),
 	url(r'^profiles/',views.profiles, name = 'profiles'),
-  	url(r'^signup/', views.signup, name = 'signup'),
+  	url(r'^signup/', views.signupReq, name = 'signup'),
   	url(r'^careers/',views.careers, name = 'careers'),
     
  
